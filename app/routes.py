@@ -16,12 +16,12 @@ from app.forms import RegistrationForm
 def index():
     posts = [
         {
-            'author': {'username': 'John'},
-            'body': 'Beautiful day in Portland!'
+            'author': {'username': 'Ivan'},
+            'body': 'Я учу Python!!!'
         },
         {
-            'author': {'username': 'Susan'},
-            'body': 'The Avengers movie was so cool!'
+            'author': {'username': 'Dima'},
+            'body': 'Я делаю свой блог!'
         }
     ]
     return render_template('index.html', title='Home Page',
