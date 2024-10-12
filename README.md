@@ -29,3 +29,23 @@ or
 ```
 http://localhost:5000/
 ```
+# Running postgres db
+1) install docker-compose
+2) go to the docker directory
+```bash
+cd docker
+```
+3) deploy db and pgadmin
+```bash
+docker-compose up
+```
+
+# Create db
+1) go to the root of the repository
+```bash
+cd ..
+```
+2) run migrate
+```bash
+flask db upgrade
+```
