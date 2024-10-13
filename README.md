@@ -17,6 +17,30 @@ python3 -m venv venv
 ```
 pip install -r requirements.txt
 ```
+## Running postgres db
+1) install docker-compose
+2) go to the docker directory
+```bash
+cd docker
+```
+3) deploy db and pgadmin
+```bash
+docker-compose up
+```
+4) run pgadmin
+```
+http://localhost:5433/
+```
+## Create db
+1) go to the root of the repository
+```bash
+cd ..
+```
+2) run migrate
+```bash
+flask db upgrade
+```
+## run blog
 5) run the application
 ```
 flask run --debug
